@@ -8,15 +8,64 @@ import {
   LogoutOutlined,
 } from "@ant-design/icons";
 import { Input, Badge } from "antd";
-
+import { Link } from "react-router-dom";
 const Header = () => {
+  let arr = [
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+    {
+      name: "Alisahib",
+      surname: "Mammadov",
+    },
+  ];
+  arr.map((item) => {
+    console.log(item);
+  });
   return (
     <div className="border-b mb-6">
       <header className="py-4 px-6 flex justify-between items-center gap-10">
         <div className="logo">
-          <a href="/">
+          <Link to="/">
             <h2 className="text-2xl font-bold md:text-4xl">LOGO</h2>
-          </a>
+          </Link>
         </div>
         <div className="header-search flex-1 flex justify-center items-center">
           <Input
@@ -27,22 +76,22 @@ const Header = () => {
           />
         </div>
         <div className="menu-links flex justify-between items-center gap-7 md:static fixed z-50 bottom-0 md:w-auto w-screen md:bg-transparent bg-white left-0 md:border-t-0 border-t md:px-0 px-4 py-1">
-          <a
-            href={"/"}
+          <Link
+            to={"/"}
             className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
           >
             <HomeOutlined className="text-xl md:text-2xl " />
             <span className="text-[10px] md:text-xs ">Ana Sayfa</span>
-          </a>
-          <Badge offset={[0,6]} count={5} className="hidden md:flex ">
-          <a
-            href={"/"}
-            className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
-          >
+          </Link>
+          <Badge offset={[0, 6]} count={5} className="hidden md:flex ">
+            <Link
+              to={"/cart"}
+              className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
+            >
               <ShoppingCartOutlined className="text-xl md:text-2xl " />
               <span className="text-[10px] md:text-xs ">Sepet</span>
-          </a>
-            </Badge>
+            </Link>
+          </Badge>
           <a
             href={"/"}
             className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
@@ -72,15 +121,15 @@ const Header = () => {
             <span className="text-[10px] md:text-xs ">Çıkış</span>
           </a>
         </div>
-        <Badge offset={[0,6]} count={5} className="md:hidden flex">
+        <Badge offset={[0, 6]} count={5} className="md:hidden flex">
           <a
             href={"/"}
             className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
           >
-              <ShoppingCartOutlined className="text-2xl " />
-              <span className="text-[10px] md:text-xs ">Sepet</span>
+            <ShoppingCartOutlined className="text-2xl " />
+            <span className="text-[10px] md:text-xs ">Sepet</span>
           </a>
-            </Badge>
+        </Badge>
       </header>
     </div>
   );

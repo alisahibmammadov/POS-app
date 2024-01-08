@@ -18,13 +18,10 @@ body {
 }
 
 @media (mix-width: 768px) {
-  body{
+  body {
     overflow: hidden;
   }
   .categories::-webkit-scrollbar {
     display: none;
-  }
-  .ant-btn-primary {
-    background-color: #1677ff;
   }
 }
