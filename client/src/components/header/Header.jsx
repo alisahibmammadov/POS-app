@@ -10,55 +10,6 @@ import {
 import { Input, Badge } from "antd";
 import { Link } from "react-router-dom";
 const Header = () => {
-  let arr = [
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-    {
-      name: "Alisahib",
-      surname: "Mammadov",
-    },
-  ];
-  arr.map((item) => {
-    console.log(item);
-  });
   return (
     <div className="border-b mb-6">
       <header className="py-4 px-6 flex justify-between items-center gap-10">
@@ -92,43 +43,43 @@ const Header = () => {
               <span className="text-[10px] md:text-xs ">Sepet</span>
             </Link>
           </Badge>
-          <a
-            href={"/"}
+          <Link
+            to={"/bills"}
             className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
           >
             <CopyOutlined className="text-xl md:text-2xl " />
             <span className="text-[10px] md:text-xs ">Faturalar</span>
-          </a>
-          <a
-            href={"/"}
+          </Link>
+          <Link
+            to={"/"}
             className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
           >
             <UserOutlined className="text-xl md:text-2xl " />
             <span className="text-[10px] md:text-xs ">Musteriler</span>
-          </a>
-          <a
-            href={"/"}
+          </Link>
+          <Link
+            to={"/"}
             className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
           >
             <BarChartOutlined className="text-xl md:text-2xl " />
             <span className="text-[10px] md:text-xs ">Statistikler</span>
-          </a>
-          <a
-            href={"/"}
+          </Link>
+          <Link
+            to={"/"}
             className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
           >
             <LogoutOutlined className="text-xl md:text-2xl " />
             <span className="text-[10px] md:text-xs ">Çıkış</span>
-          </a>
+          </Link>
         </div>
         <Badge offset={[0, 6]} count={5} className="md:hidden flex">
-          <a
-            href={"/"}
+          <Link
+            to={"/"}
             className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
           >
             <ShoppingCartOutlined className="text-2xl " />
             <span className="text-[10px] md:text-xs ">Sepet</span>
-          </a>
+          </Link>
         </Badge>
       </header>
     </div>
